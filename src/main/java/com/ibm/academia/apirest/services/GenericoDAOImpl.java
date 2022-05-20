@@ -1,5 +1,6 @@
 package com.ibm.academia.apirest.services;
 
+import com.ibm.academia.apirest.models.entities.Ruleta;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -36,4 +37,5 @@ public class GenericoDAOImpl <E, R extends CrudRepository<E, Integer>> implement
     public void eliminarPorId(Integer id) {
         repository.deleteById(id);
     }
+
 }
