@@ -1,0 +1,66 @@
+2022-05-20 02:32:40,199 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-20 02:32:40,396 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-20 02:32:40,521 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9082"]
+2022-05-20 02:32:40,534 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9082 (http) with context path '/api/v1/casino'
+2022-05-20 02:32:40,702 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RuletaRestApplication in 3.401 seconds (JVM running for 4.128)
+2022-05-20 02:32:47,414 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-20 02:32:47,414 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9082-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-20 02:32:47,415 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9082-exec-1] Completed initialization in 1 ms
+2022-05-20 02:33:34,750 INFO com.ibm.academia.apirest.controller.RuletaController [http-nio-9082-exec-5] No value present
+2022-05-20 02:34:02,680 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-20 02:34:02,683 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-05-20 02:34:02,687 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-05-20 02:46:39,258 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-05-20 02:46:39,258 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RuletaRestApplication using Java 18 on LAPTOP-5H0JNLOJ with PID 7592 (C:\Users\106625781\IdeaProjects\RuletaREST\target\classes started by 106625781 in C:\Users\106625781\IdeaProjects\RuletaREST)
+2022-05-20 02:46:39,261 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-05-20 02:46:39,315 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-20 02:46:39,315 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-20 02:46:39,965 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-20 02:46:40,013 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2022-05-20 02:46:40,443 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9082 (http)
+2022-05-20 02:46:40,447 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9082"]
+2022-05-20 02:46:40,451 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-20 02:46:40,451 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-20 02:46:40,521 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-20 02:46:40,527 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1211 ms
+2022-05-20 02:46:40,621 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-20 02:46:40,653 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-05-20 02:46:40,724 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-20 02:46:40,789 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-20 02:46:40,917 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-20 02:46:40,931 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-05-20 02:46:41,476 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-20 02:46:41,482 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-20 02:46:41,934 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-20 02:46:42,148 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-20 02:46:42,273 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9082"]
+2022-05-20 02:46:42,285 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9082 (http) with context path '/api/v1/casino'
+2022-05-20 02:46:42,457 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RuletaRestApplication in 3.549 seconds (JVM running for 4.359)
+2022-05-20 02:47:15,471 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-20 02:47:15,472 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9082-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-20 02:47:15,477 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9082-exec-1] Completed initialization in 3 ms
+2022-05-20 02:47:15,658 INFO com.ibm.academia.apirest.controller.RuletaController [http-nio-9082-exec-1] For input string: "Rojo"
+2022-05-20 02:47:32,524 INFO com.ibm.academia.apirest.controller.RuletaController [http-nio-9082-exec-3] For input string: ""rojo""
+2022-05-20 02:47:45,524 INFO com.ibm.academia.apirest.controller.RuletaController [http-nio-9082-exec-4] For input string: "ROJO"
+2022-05-20 02:47:52,087 INFO com.ibm.academia.apirest.controller.RuletaController [http-nio-9082-exec-5] For input string: "rojo"
+2022-05-20 02:48:15,553 INFO com.ibm.academia.apirest.controller.RuletaController [http-nio-9082-exec-6] For input string: "negro"
+2022-05-20 02:49:45,373 INFO com.ibm.academia.apirest.controller.RuletaController [http-nio-9082-exec-10] Apuesta invalida
+2022-05-20 02:49:50,337 INFO com.ibm.academia.apirest.controller.RuletaController [http-nio-9082-exec-2] Apuesta invalida
+2022-05-20 02:50:00,434 INFO com.ibm.academia.apirest.controller.RuletaController [http-nio-9082-exec-1] For input string: ""
+2022-05-20 02:51:58,315 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9082-exec-9] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "negro"]
+2022-05-20 02:52:16,951 INFO com.ibm.academia.apirest.controller.RuletaController [http-nio-9082-exec-2] For input string: "negro"
+2022-05-20 02:52:21,455 INFO com.ibm.academia.apirest.controller.RuletaController [http-nio-9082-exec-1] Apuesta invalida
+2022-05-20 02:54:44,232 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-20 02:54:44,235 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-05-20 02:54:44,241 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-05-20 09:40:43,084 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-05-20 09:40:43,085 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RuletaRestApplication using Java 18 on LAPTOP-5H0JNLOJ with PID 19988 (C:\Users\106625781\IdeaProjects\RuletaREST\target\classes started by 106625781 in C:\Users\106625781\IdeaProjects\RuletaREST)
+2022-05-20 09:40:43,088 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-05-20 09:40:43,149 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-20 09:40:43,150 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-20 09:40:44,381 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-20 09:40:44,467 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 75 ms. Found 3 JPA repository interfaces.
+2022-05-20 09:40:45,163 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9082 (http)
+2022-05-20 09:40:45,175 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9082"]
+2022-05-20 09:40:45,175 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-20 09:40:45,176 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]

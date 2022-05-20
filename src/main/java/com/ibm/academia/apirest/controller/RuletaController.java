@@ -1,6 +1,7 @@
 package com.ibm.academia.apirest.controller;
 
 import com.ibm.academia.apirest.exceptions.NotFoundException;
+import com.ibm.academia.apirest.models.dto.ApuestaDTO;
 import com.ibm.academia.apirest.models.entities.Apuesta;
 import com.ibm.academia.apirest.models.entities.Ruleta;
 import com.ibm.academia.apirest.services.ApuestaDAO;
@@ -114,5 +115,52 @@ public class RuletaController {
         }
 
         return new ResponseEntity<Map<String, Object>>(respuesta, HttpStatus.NOT_ACCEPTABLE);
+    }
+
+    /**
+     * Enpoint creado para cerrar ruleta y listar apuestas de esta misma
+     * @param ruletaId Id de la ruleta a cerrar
+     * @return Listado de las apuestas realizadas previamente en esta ruleta
+     * @author DECO 20/05/2022
+     */
+    @PostMapping("/cerrar")
+    public ResponseEntity<?> cerrarRuleta(@RequestParam(name = "id") Integer ruletaId) {
+
+        Ruleta ruletaCerrar = null;
+        Map<String, Object> respuesta = new HashMap<String, Object>();
+        try {
+            ruletaCerrar = ruletaDAO.buscarPorId(ruletaId).get();
+            List<ApuestaDTO> apuestas = (List<ApuestaDTO>) apuestaDAO.obtenerApuestaRuleta(ruletaId);
+
+            return new ResponseEntity<List<ApuestaDTO>>(apuestas, HttpStatus.OK);
+        } catch (Exception e) {
+            logger.info(e.getMessage());
+            respuesta.put("Error", "No se pudo completar la operacion solicitada");
+        }
+
+        return new ResponseEntity<Map<String, Object>>(respuesta, HttpStatus.BAD_REQUEST);
+    }
+
+    /**
+     * Endpoint para listar todas las ruletas que se encuentran en la bd
+     * @return Lista de ruletas en la bd
+     */
+    @PostMapping("/listar")
+    public ResponseEntity<?> listarTodasRuletas() {
+
+        List<Ruleta> ruletas = null;
+        Map<String, Object> respuesta = new HashMap<String, Object>();
+        try {
+            ruletas = (List<Ruleta>) ruletaDAO.buscarTodos();
+            return new ResponseEntity<List<Ruleta>>(ruletas, HttpStatus.OK);
+        } catch (NotFoundException e) {
+            logger.info(e.getMessage());
+            respuesta.put("Error", "No existen ruletas registradas");
+        } catch (Exception e) {
+            logger.info(e.getMessage());
+            respuesta.put("Error", " No se pudo completar la operacion solicitada");
+        }
+
+        return new ResponseEntity<Map<String, Object>>(respuesta, HttpStatus.NOT_FOUND);
     }
 }
