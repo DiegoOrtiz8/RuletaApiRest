@@ -1,6 +1,9 @@
 package com.ibm.academia.apirest.models.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
@@ -10,6 +13,9 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 @Table(name = "apuestas", schema = "casino")
 public class Apuesta implements Serializable {
