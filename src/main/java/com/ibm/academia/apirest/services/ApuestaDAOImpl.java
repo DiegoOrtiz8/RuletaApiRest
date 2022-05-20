@@ -84,12 +84,11 @@ public class ApuestaDAOImpl extends GenericoDAOImpl<Apuesta, ApuestaRepository> 
             colorApuesta = seleccionApuesta;
 
             if(numeroAleatorio == 1) {
+                apuesta.setResultado("ROJO");
                 if(colorApuesta.toUpperCase().equals("ROJO")) {
                     apuesta.setEstado(1);
-                    apuesta.setResultado("ROJO");
                 }
                 else if(colorApuesta.toUpperCase().equals("NEGRO")) {
-                    apuesta.setResultado("NEGRO");
                     apuesta.setEstado(0);
                 }
                 else {
@@ -97,12 +96,11 @@ public class ApuestaDAOImpl extends GenericoDAOImpl<Apuesta, ApuestaRepository> 
                 }
             }
             else if(numeroAleatorio == 2) {
+                apuesta.setResultado("NEGRO");
                 if(colorApuesta.toUpperCase().equals("NEGRO")) {
-                    apuesta.setResultado("NEGRO");
                     apuesta.setEstado(1);
                 }
                 else if(colorApuesta.toUpperCase().equals("ROJO")) {
-                    apuesta.setResultado("ROJO");
                     apuesta.setEstado(0);
                 }
                 else {

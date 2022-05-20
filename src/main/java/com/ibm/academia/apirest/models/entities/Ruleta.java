@@ -22,7 +22,7 @@ public class Ruleta implements Serializable {
     private Integer id;
 
     @Column(name = "estado")
-    @Positive(message = "Debe de ser positivo")
+    //@Positive(message = "Debe de ser positivo")
     private Integer estado;
 
     @Column(name = "fecha_alta")

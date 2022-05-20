@@ -111,7 +111,7 @@ public class RuletaController {
             return new ResponseEntity<Apuesta>(apuestaRealizada, HttpStatus.CREATED);
         } catch (Exception e) {
             logger.info(e.getMessage());
-            respuesta.put("error", "No se pudo realizar la apuesta");
+            respuesta.put("Error", "No se pudo realizar la apuesta");
         }
 
         return new ResponseEntity<Map<String, Object>>(respuesta, HttpStatus.NOT_ACCEPTABLE);
@@ -162,5 +162,20 @@ public class RuletaController {
         }
 
         return new ResponseEntity<Map<String, Object>>(respuesta, HttpStatus.NOT_FOUND);
+    }
+
+    @DeleteMapping("/del/ruleta")
+    public ResponseEntity<?> eliminarRuleta(@RequestParam(name = "id") Integer ruletaId) {
+        Map<String, Object> respuesta = new HashMap<String,Object>();
+
+        Optional<Ruleta> ruleta = ruletaDAO.buscarPorId(ruletaId);
+
+        //if(!ruleta.isPresent())
+            //throw new NotFoundException(String.format("La ruleta con ID: %d no existe"), ruletaId);
+
+        ruletaDAO.eliminarPorId(ruletaId);
+        respuesta.put("OK", "Ruleta ID: " + ruletaId + " Eliminada existosamente");
+
+        return new ResponseEntity<Map<String, Object>>(respuesta, HttpStatus.ACCEPTED);
     }
 }
